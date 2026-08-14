@@ -1,11 +1,11 @@
-# RTL8189FS-WLAN für Armbian auf Tanix TX3 Mini
+# RTL8189FS-WLAN für Armbian auf x96-Mini, Tanix TX3 Mini
 
 Dieses Repository enthält ein getestetes Kernelmodul für den internen
 Realtek-RTL8189FTV/RTL8189FS-SDIO-WLAN-Chip der Tanix TX3 Mini.
 
 ## Unterstütztes System
 
-- Gerät: Tanix TX3 Mini / Amlogic S905W
+- Gerät: x96-Mini, Tanix TX3 Mini / Amlogic S905W
 - Betriebssystem: Armbian OS auf Debian 12 Bookworm
 - Kernel: **6.18.43-ophub**
 - Architektur: ARM64 (`aarch64`)
@@ -65,21 +65,6 @@ sudo ./uninstall.sh
 Falls bei der Installation bereits ein gleichnamiges Modul vorhanden war, wird
 es als `.backup` gesichert und bei der Deinstallation wiederhergestellt.
 
-## GitHub-Repository veröffentlichen
-
-1. Auf GitHub ein neues leeres Repository namens `armbian-rtl8189fs` anlegen.
-2. Keine README, `.gitignore` oder Lizenz auf GitHub erzeugen, da diese Dateien
-   bereits enthalten sind.
-3. In diesem Verzeichnis ausführen:
-
-```bash
-git init
-git add .
-git commit -m "Add RTL8189FS driver for Armbian 6.18.43-ophub"
-git branch -M main
-git remote add origin https://github.com/DEIN-BENUTZERNAME/armbian-rtl8189fs.git
-git push -u origin main
-```
 
 ## Optional: GitHub-Release erzeugen
 
