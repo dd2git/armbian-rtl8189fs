@@ -55,39 +55,10 @@ sudo nmcli device wifi connect "NAME-DES-WLANS" password "WLAN-PASSWORT" ifname 
 
 Das WLAN-Passwort gehört nicht in dieses Repository.
 
-## Automatischer Einrichtungs-Hotspot
+## Optionaler Einrichtungs-Hotspot
 
-Nach der Treiberinstallation kann zusätzlich das getestete WLAN-Portal
-installiert werden:
-
-```bash
-cd armbian-rtl8189fs
-sudo ./install-hotspot.sh
-```
-
-Wenn keine WLAN-Client-Verbindung besteht, startet danach automatisch:
-
-- Hotspot: `Armbian-Setup`
-- Hotspot-Passwort: `armbian-setup`
-- Einrichtungsseite: `http://10.42.0.1/`
-
-Auf der Webseite lassen sich erreichbare WLAN-Netze scannen und das zugehörige
-Passwort eingeben. Bei erfolgreicher Verbindung wird der Hotspot deaktiviert.
-Schlägt die Anmeldung fehl, bleibt beziehungsweise startet der Hotspot wieder.
-Der Dienst wird bei jedem Systemstart automatisch geladen.
-
-Status und Protokoll anzeigen:
-
-```bash
-systemctl status armbian-wifi-setup
-journalctl -u armbian-wifi-setup -f
-```
-
-Portal wieder entfernen:
-
-```bash
-sudo ./uninstall-hotspot.sh
-```
+Der automatische WLAN-Einrichtungs-Hotspot befindet sich in einem eigenen
+Repository: [dd2git/armbian-wifi-hotspot](https://github.com/dd2git/armbian-wifi-hotspot)
 
 ## Deinstallation
 
