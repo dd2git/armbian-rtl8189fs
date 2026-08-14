@@ -1,0 +1,31 @@
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Das vollständige GitHub-Paket ist fertig:
+
+  - armbian-rtl8189fs
+  - armbian-rtl8189fs/README.md
+  - armbian-rtl8189fs/armbian-rtl8189fs-6.18.43-ophub.tar.gz
+  - armbian-rtl8189fs/install.sh
+  - armbian-rtl8189fs/scan-wifi.sh
+  - armbian-rtl8189fs/uninstall.sh
+
+  Enthalten sind das getestete ARM64-Modul 8189fs.ko, Kernelprüfung, Prüfsumme, automatisches Laden beim Start und eine vollständige GitHub-Anleitung.
+
+  Alle Skripte wurden syntaktisch geprüft, das Archiv kontrolliert und die Modul-Prüfsumme verifiziert.
+
+  Zum Hochladen:
+
+  cd /home/dd/armbian-rtl8189fs
+  git init
+  git add .
+  git commit -m "Add RTL8189FS driver for Armbian 6.18.43-ophub"
+  git branch -M main
+  git remote add origin https://github.com/dd2git/armbian-rtl8189fs.git
+  git push -u origin main
+
+  Das Release-Archiv hat folgende SHA-256-Prüfsumme:
+
+  2ab3c0f2e97feb5da825f76a723885bacf72782f7e39d6f58d4c378063518695
+
+  Es wurden keine SSH-, Root- oder WLAN-Zugangsdaten ins Paket aufgenommen.
+
