@@ -26,7 +26,7 @@ uname -r
 Die Ausgabe muss `6.18.43-ophub` sein. Danach:
 
 ```bash
-git clone https://github.com/DEIN-BENUTZERNAME/armbian-rtl8189fs.git
+git clone https://github.com/dd2git/armbian-rtl8189fs.git
 cd armbian-rtl8189fs
 chmod +x install.sh uninstall.sh scan-wifi.sh
 sudo ./install.sh
